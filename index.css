@@ -445,7 +445,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
@@ -456,7 +456,7 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 25rem;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
     .work__box:not(:last-child) {
         margin-bottom: 20rem;
     }
@@ -468,7 +468,13 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-    flex: 0 0 40%;
+    flex: 0 0 60%; /* Set the width to 60% */
+}
+
+.work__image-box {
+    flex: 0 0 40%; /* Set the width to 40% */
+    display: flex;
+    justify-content: flex-end; /* Move the photo to the right within the container */
 }
 
 .work__list {
@@ -488,28 +494,11 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
-.work__image-box {
-    margin-bottom: var(--gutter-normal);
-    margin-left: 500px; /* Add a margin to move the photo to the right */
-}
-
 .work__image {
-    max-width: 200px; /* Set a smaller maximum width for the image */
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
     display: block; /* Remove any default inline styling */
 }
 
-@media (min-width: 801px) {
-    .work__image-box {
-        flex: 1;
-        margin: 0 0 0 8rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .work__code {
-        height: 2rem;
-    }
-}
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
