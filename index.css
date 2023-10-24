@@ -490,17 +490,22 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
-    margin-left: 20px;
+    margin-left: 20px; /* Add a margin to move the photo to the right */
 }
 
-@media(min-width: 801px) {
+.work__image {
+    max-width: 80px; /* Set a smaller maximum width for the image */
+    display: block; /* Remove any default inline styling */
+}
+
+@media (min-width: 801px) {
     .work__image-box {
         flex: 1;
         margin: 0 0 0 10rem;
     }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     .work__code {
         height: 3rem;
     }
