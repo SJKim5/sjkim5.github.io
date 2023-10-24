@@ -525,6 +525,10 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
 }
 
+.contact__text {
+    flex: 0 0 100%; /* Set the width to 60% */
+}
+
 /* --------------------------------------- */
 /* ----- Footer ----- */
 /* --------------------------------------- */
