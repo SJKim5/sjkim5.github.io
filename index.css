@@ -40,10 +40,10 @@
     --white-1: #e5e5e6da;
 
 
-    --container-max-width: 1180px;
-    --container-normal-width: 800px;
-    --container-medium-width: 700px; 
-    --container-small-width: 500px;
+    --container-max-width: 1000px;
+    --container-normal-width: 600px;
+    --container-medium-width: 500px; 
+    --container-small-width: 300px;
 
     --gutter-huge: 12rem;
     --gutter-medium: 6rem;
@@ -87,7 +87,7 @@ body {
     }
 }
 
-@media(max-width: 1140px) {
+@media(max-width: 1000px) {
     .row {
         padding: 0 var(--gutter-medium);
     }
@@ -99,7 +99,7 @@ body {
     }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 400px) {
     .row {
         padding: 0 var(--gutter-small);
     }
