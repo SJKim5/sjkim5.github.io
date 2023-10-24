@@ -442,13 +442,13 @@ body:not(.user-is-tabbing) a:focus {
 
 .about__content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row; /* Change from row-reverse to row */
     align-items: center;
 }
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     .about__content {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* Maintain the reversed order on smaller screens */
         align-items: initial;
     }
 }
@@ -457,16 +457,17 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
-@media(min-width: 901px) {
+@media (min-width: 901px) {
     .about__text {
-        flex: 0 0 40%;
+        flex: 1; /* Expand the text to fill the available space */
     }
-    
+
     .about__photo-container {
-        flex: 1;
-        margin: 0 var(--gutter-huge) 0 0;
+        flex: 1; /* Expand the photo to fill the available space */
+        margin: 0 0 0 var(--gutter-huge); /* Move the photo to the right */
     }
 }
+
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
