@@ -440,34 +440,48 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Work ----- */
 /* --------------------------------------- */
 
-.about__content {
+.work__box {
     display: flex;
-    flex-direction: row; /* Change from row-reverse to row */
     align-items: center;
 }
 
-@media (max-width: 900px) {
-    .about__content {
-        flex-direction: column-reverse; /* Maintain the reversed order on smaller screens */
+@media (max-width: 600px) {
+    .work__box {
         align-items: initial;
+        flex-direction: column-reverse;
     }
 }
 
-.about__photo-container {
-    margin-bottom: var(--gutter-normal);
+.work__box:not(:last-child) {
+    margin-bottom: 10rem;
 }
 
-@media (min-width: 901px) {
-    .about__text {
-        flex: 1; /* Expand the text to fill the available space */
-    }
-
-    .about__photo-container {
-        flex: 1; /* Expand the photo to fill the available space */
-        margin: 0 0 0 var(--gutter-huge); /* Move the photo to the right */
+@media (max-width: 500px) {
+    .work__box:not(:last-child) {
+        margin-bottom: 5rem;
     }
 }
 
+.work__links {
+    display: flex;
+    align-items: center;
+}
+
+.work__text {
+    flex: 0 0 60%; /* Set the width to 60% */
+}
+
+.work__image-box {
+    flex: 0 0 40%; /* Set the width to 40% */
+    display: flex;
+    justify-content: flex-end; /* Move the photo to the right within the container */
+}
+
+.work__image {
+    max-width: 200px; /* Ensure the image doesn't exceed the container width */
+    display: block; /* Remove any default inline styling */
+    margin-left: auto; /* Add this line to center the image on the right side */
+}
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
