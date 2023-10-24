@@ -445,7 +445,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
@@ -453,12 +453,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
 }
 
 @media (max-width: 500px) {
     .work__box:not(:last-child) {
-        margin-bottom: 20rem;
+        margin-bottom: 15rem;
     }
 }
 
@@ -495,7 +495,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__image {
-    max-width: 150px; /* Ensure the image doesn't exceed the container width */
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
     display: block; /* Remove any default inline styling */
 }
 
