@@ -68,6 +68,35 @@
 
     <!-- ***** About ***** -->
 
+    <html>
+    <head>
+        <style>
+            .work__image-box {
+                margin-bottom: var(--gutter-normal);
+                margin-left: 20px; /* Add a margin to move the photo to the right */
+            }
+
+            .work__image {
+                max-width: 80px; /* Set a smaller maximum width for the image */
+                display: block; /* Remove any default inline styling */
+            }
+
+            @media (min-width: 901px) {
+                .work__image-box {
+                    flex: 1;
+                    margin: 0 0 0 10rem;
+                }
+            }
+
+            @media (max-width: 900px) {
+                .work__code {
+                    height: 4rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
     <section class="work" id="work">
       <div class="row">
         <h2>My Education</h2>
