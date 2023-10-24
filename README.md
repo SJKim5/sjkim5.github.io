@@ -1,2 +1,0 @@
-<<<<<<< HEAD
-# Personal Portfolio Website
