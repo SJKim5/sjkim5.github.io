@@ -437,99 +437,99 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Work ----- */
+/* ----- education ----- */
 /* --------------------------------------- */
 
-.work__box {
+.education__box {
     display: flex;
     align-items: center;
 }
 
 @media (max-width: 600px) {
-    .work__box {
+    .education__box {
         align-items: initial;
         flex-direction: column-reverse;
     }
 }
 
-.work__box:not(:last-child) {
+.education__box:not(:last-child) {
     margin-bottom: 10rem;
 }
 
 @media (max-width: 500px) {
-    .work__box:not(:last-child) {
+    .education__box:not(:last-child) {
         margin-bottom: 5rem;
     }
 }
 
-.work__links {
+.education__links {
     display: flex;
     align-items: center;
 }
 
-.work__text {
+.education__text {
     flex: 0 0 60%; /* Set the width to 60% */
 }
 
-.work__image-box {
+.education__image-box {
     flex: 0 0 40%; /* Set the width to 40% */
     display: flex;
     justify-content: flex-end; /* Move the photo to the right within the container */
 }
 
-.work__image {
+.education__image {
     max-width: 200px; /* Ensure the image doesn't exceed the container width */
     display: block; /* Remove any default inline styling */
     margin-left: auto; /* Add this line to center the image on the right side */
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- skills ----- */
 /* --------------------------------------- */
 
-.client__logos {
+.skills__logos {
     display: flex;
     justify-content: space-between;
     filter: invert(100%) grayscale(100%) opacity(.8);
 }
 
-.client__logo {
+.skills__logo {
     height: 6.5rem;
     max-width: 18rem;
 }
 
 @media(max-width: 1240px) {
-    .client__logos {
+    .skills__logos {
         overflow-x: scroll;
         padding: var(--gutter-normal);
     }
 
-    .client__logo:not(:last-of-type) {
+    .skills__logo:not(:last-of-type) {
         margin-right: var(--gutter-medium);
     }
 }
 
 /* --------------------------------------- */
-/* ----- About ----- */
+/* ----- publication ----- */
 /* --------------------------------------- */
 
-.about__info {
+.publication__info {
     max-width: var(--container-medium-width);
 }
 
-.about__text {
+.publication__text {
     flex: 0 0 100%; /* Set the width to 60% */
 }
 
 /* --------------------------------------- */
-/* ----- Contact ----- */
+/* ----- Research Project / Work Experience ----- */
 /* --------------------------------------- */
 
-.contact__info {
+.experience__info {
     max-width: var(--container-medium-width);
 }
 
-.contact__text {
+.experience__text {
     flex: 0 0 100%; /* Set the width to 60% */
 }
 
